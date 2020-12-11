@@ -1,0 +1,297 @@
+@charset "utf-8";
+/* CSS Document */
+*, html {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body{
+    font-family: sans-serif;
+	height: 3000px;
+	scroll-behavior: smooth;
+}
+
+#welcomepage{
+	background-image: url("../Additional files/galaxy2.jpg");
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.slogan{
+	color: white;
+	text-align:center;
+	transform: translateY(600px)
+}
+#welcomepage h1{
+	animation: type 5s infinite  steps(26);
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 4px solid white;
+	width: 26ch;
+	margin-left: 450px;
+	
+}
+@keyframes type{
+	0%{
+		width: 0ch;
+	}
+	100%{
+		width: 26ch;
+	}
+}
+.logo{
+	transform: translateY(100px) scale(1.7);
+	margin-left: 550px;
+	animation: bright 0.8s infinite;
+}
+
+@keyframes bright{
+	0%{
+		filter: brightness(100%);
+	}
+	50%{
+		filter: brightness(40%);
+	}
+	100%{
+		filter: brightness(100%);
+	}
+}
+header {
+	width: 100%;
+	height: 60px;
+	background-image: url("../Additional files/galaxy.jpg");
+	position:sticky;
+	top: 0;
+	z-index: 1;
+}
+.logoheader{
+	padding-left: 50px;
+	padding-top: 10px;
+}
+nav {
+	float: right;
+	width: 50%;
+	text-align: right;
+	margin-right: 25px;
+}
+header nav ul {
+	list-style: none;
+	float: right;
+	padding-top: 20px;
+}
+nav ul li {
+	float: left;
+	color: white;
+	font-size: 14px;
+	text-align: left;
+	margin-right: 25px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.8s linear;
+}
+ul li a {
+	color: white;
+	text-decoration: none;
+}
+ul li:hover a {
+	color: cadetblue;
+}
+#about{
+	display: flex;
+	flex-direction: row;
+}
+#about .aboutcontent{
+	display: inline;
+	width: 60%;
+	height: 700px;
+}
+.gambar1, .gambar2, .gambar3, .gambar4{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#about .gambar1{
+	background-image: url("../Additional files/IMG_20200927_223233_986.jpg");
+	background-size: cover;
+	width: 40%;
+	height: 700px;
+	animation: fade 10s infinite;
+	-webkit-animation: fade 10s infinite;
+}
+#about .gambar2{
+	background-image: url("../Additional files/gambar2.png");
+	background-size: cover;
+	width: 40%;
+	height: 700px;
+	animation: fade2 10s infinite;
+	-webkit-animation: fade2 10s infinite;
+}
+#about .gambar3{
+	background-image: url("../Additional files/gambar3.png");
+	background-size: cover;
+	width: 40%;
+	height: 700px;
+	animation: fade3 10s infinite;
+	-webkit-animation: fade3 10s infinite;
+}
+#about .gambar4{
+	background-image: url("../Additional files/gambar4.png");
+	background-size: cover;
+	width: 40%;
+	height: 700px;
+	animation: fade4 10s infinite;
+	-webkit-animation: fade4 10s infinite;
+}
+@keyframes fade {
+	0%{opacity:  1}
+	25%{opacity:  0}
+	50%{opacity:  0}
+	75%{opacity: 0}
+	100%{opacity:  1}
+}
+@keyframes fade2 {
+	0%{opacity:  0}
+	25%{opacity:  1}
+	50%{opacity:  0}
+	75%{opacity: 0}
+	100%{opacity:  0}
+}
+@keyframes fade3 {
+	0%{opacity:  0}
+	25%{opacity:  0}
+	50%{opacity:  1}
+	75%{opacity: 0}
+	100%{opacity:  0}
+}
+@keyframes fade4 {
+	0%{opacity:  0}
+	25%{opacity:  0}
+	50%{opacity:  0}
+	75%{opacity: 1}
+	100%{opacity:  0}
+}
+.aboutcontent{
+	margin-top: 100px;
+}
+.aboutcontent h1{
+	font-size: 200px;
+}
+.aboutcontent h3, p{
+	font-size: 30px;
+	margin-left: 15px
+}
+#menu{
+	background-image: url("../Additional files/galaxy.jpg");
+	background-size: cover;
+	height: 120vh;
+	transform: translateY(-140px)
+}
+.menucontent h1{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	transform: translateY(70px);
+}
+.picmenu{
+	display: flex;
+	flex-direction: row;
+	transform: translateY(50px);
+	text-align: center;
+}
+.picmenu label{
+	color: white;
+}
+.picmenu img{
+	margin-left: -30px;
+}
+.milktea, .thaigreentea, .thaitea, .chocolate{
+	transition-duration: 0.7s;
+}
+.milktea:hover, .thaigreentea:hover, .thaitea:hover, .chocolate:hover{
+	transform: scale(1.5);
+}
+#order .ordercontent{
+	height: 700px;
+}
+.ordercontent h1{
+	text-align: center;
+	font-size: 40px;
+	color: black;
+	transform: translateY(70px)
+}
+.picorder{
+	display: flex;
+	flex-direction: row;
+	transform: translateY(100px);
+	text-align: center;
+	justify-content: space-around;
+}
+.picorder label{
+	text-decoration: underline;
+}
+.dm img, .grab img{
+	border: 2px solid black;
+}
+.picorder button{
+	height: 30px;
+	width: 200px;
+	background-color: limegreen;
+	cursor: pointer;
+	text-transform:uppercase;
+	border: 2px solid black;
+}
+.picorder button:hover{
+	filter: grayscale(40%)
+}
+.logoorder{
+	display: block;
+	transform: translateY(-170px);
+	margin-right: 50px;
+}
+#contact{
+	background-image: url("../Additional files/contact.jpg");
+	background-size: cover;
+	height: 700px;
+}
+.contactcontent{
+	height: 700px;
+	color: white;
+}
+.contactcontent h1{
+	font-size: 200px;
+}
+.contactcontent h3{
+	font-size: 30px;
+	margin-left: 15px;
+	transform: translateY(20px)
+}
+.contactcontent a{
+	color: white;
+	margin-left: 15px;
+}
+.contactcontent button{
+	width: 160px;
+	height: 40px;
+	cursor: pointer;
+	background-color: limegreen;
+	margin-left: 15px;
+}
+.contactcontent button:hover{
+	filter: grayscale(40%)
+}
+#contact{
+	display: flex;
+	flex-direction: row;
+}
+#contact .contactcontent{
+	display: inline;
+	width: 60%;
+	height: 700px;
+}
+#contact .contactpic{
+	background-image: url("../Additional files/instagram.jpg");
+	background-size: cover;
+	width: 40%;
+	height: 700px;
+}
