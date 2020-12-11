@@ -198,12 +198,19 @@ ul li:hover a {
 	flex-direction: row;
 	transform: translateY(50px);
 	text-align: center;
+	justify-content: space-around
 }
 .picmenu label{
 	color: white;
 }
 .picmenu img{
-	margin-left: -30px;
+	margin-left: 0px;
+}
+.thaigreentea{
+	transform: translateY(10px)
+}
+.chocolate{
+	transform: translateY(-10px)
 }
 .milktea, .thaigreentea, .thaitea, .chocolate{
 	transition-duration: 0.7s;
@@ -233,6 +240,12 @@ ul li:hover a {
 .dm img, .grab img{
 	border: 2px solid black;
 }
+.dm{
+	margin-left: 70px
+}
+.grab{
+	margin-right: 120px
+}
 .picorder button{
 	height: 30px;
 	width: 200px;
@@ -247,7 +260,7 @@ ul li:hover a {
 .logoorder{
 	display: block;
 	transform: translateY(-170px);
-	margin-right: 50px;
+	
 }
 #contact{
 	background-image: url("../Additional files/contact.jpg");
@@ -295,3 +308,4 @@ ul li:hover a {
 	width: 40%;
 	height: 700px;
 }
+
