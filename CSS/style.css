@@ -309,3 +309,9 @@ ul li:hover a {
 	height: 700px;
 }
 
+@media only screen and (max-width:600px){
+	div#welcomepage{
+		margin-left: -450px;
+	}
+}
+
