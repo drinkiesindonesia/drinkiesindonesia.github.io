@@ -3,15 +3,25 @@
 <head>
 <meta charset="utf-8">
 <title>Drinkies</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="CSS/style.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
-<div>
+<div class="container">
 	<div id="welcomepage">
 		<h1 class="slogan">Tea is always a good idea.</h1>
 		<img class="logo" src="Additional files/logoo.png" alt="logo drinkies">
+	</div>
+	<input type="checkbox" id="check">
+	<div class="sidebar">
+	     <ul>
+        	<li><a href="#about">ABOUT US</a></li>
+        	<li><a href="#menu">OUR MENU</a></li>
+        	<li> <a href="#order">ORDER</a></li>
+			<li> <a href="#contact">CONTACT</a></li>
+      	</ul>
 	</div>
 	<header> 
 		<a href="#welcomepage">
@@ -25,6 +35,8 @@
 			<li> <a href="#contact">CONTACT</a></li>
       	</ul>
     	</nav>
+	<!--Menu mobile-->
+		<label for="check" class="menumobile"><i class="fas fa-bars fa-2x"></i></label>
   	</header>
 	<div id="about">
 		<div class="aboutcontent">
@@ -92,8 +104,8 @@
 					<a href="https://www.instagram.com/drinkies.ind/"><button>Direct Message Now</button></a>
 				</div>
 				<div class="logoorder">
-					<img src="Additional files/DM logo.png" alt="logo dm" width="380px" height="380px"><br>
-					<img src="Additional files/gflogo.png" alt="logo grabfood" width="200px" height="200px">
+					<img class="logodm" src="Additional files/DM logo.png" alt="logo dm" width="380px" height="380px"><br>
+					<img class="logogf" src="Additional files/gflogo.png" alt="logo grabfood" width="200px" height="200px">
 				</div>
 				<div class="grab">
 					<label for=".grab">Grab Food</label><br>
