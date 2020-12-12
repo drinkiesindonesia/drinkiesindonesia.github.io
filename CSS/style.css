@@ -374,18 +374,22 @@ ul li:hover a {
 		margin-left: 38px;
 	}
 	.dm img, .grab img{
-		width: 220px;
+		width: 200px;
 		height: 120px;
 	}
 	.dm {
-		transform: translate(230px, 80px)
+		transform: translate(210px, 80px)
 	}
 	.grab{
-		transform: translate(-230px, 80px)
+		transform: translate(-210px, 80px)
 	}
 	
 	.dm button{
-		transform: translate(25px,0px)
+		transform: translate(25px,0px);
+		width: 160px
+	}
+	.grab button{
+		width: 160px;
 	}
 	.dm label{
 		transform: translate(25px,0px)
