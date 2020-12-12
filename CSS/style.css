@@ -345,7 +345,7 @@ ul li:hover a {
 	*, html {
 	margin: 0px;
 	padding: 0px;
-}
+	}
 	#welcomepage{
 		margin-left: -470px;
 	}
@@ -373,38 +373,41 @@ ul li:hover a {
 	.gambar{
 		margin-left: 38px;
 	}
-	.dm img, .grab img, .dm label, .grab label{
-		display: none;
+	.dm img, .grab img{
+		width: 220px;
+		height: 120px;
+	}
+	.dm {
+		transform: translate(230px, 80px)
+	}
+	.grab{
+		transform: translate(-230px, 80px)
+	}
+	
+	.dm button{
+		transform: translate(25px,0px)
+	}
+	.dm label{
+		transform: translate(25px,0px)
 	}
 	.logoorder{
-		display: flex;
-		flex-direction: column;
-		margin-left: 50px;
-	}
-	.logodm{
-		width: 440px;
-		height: 440px;
-		transform: translateY(-50px)
-	}
-	.logogf{
-		width: 220px;
-		height: 220px;
-		margin-left: 112px;
-		transform: translateY(-170px)
-	}
-	.dm button{
-		transform: translate(370px,0px)
-	}
-	.grab button{
-		transform: translate(-320px,230px)
+		display: none;
 	}
 	.contactcontent h1{
 		font-size: 60px;
+		transform: translate(10px, 70px)
 	}
 	.contactcontent h3{
 		font-size: 25px;
+		transform: translateY(70px)
+	}
+	.contactcontent button{
+		transform: translateY(100px)
+	}
+	.link{
+		display: none;
 	}
 	.contactpic{
 		display: none;
-	}
+	}	
 }
