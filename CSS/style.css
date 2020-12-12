@@ -374,11 +374,11 @@ ul li:hover a {
 		margin-left: 38px;
 	}
 	.dm img, .grab img{
-		width: 180px;
+		width: 200px;
 		height: 120px;
 	}
 	.dm {
-		transform: translate(150px, 80px)
+		transform: translate(210px, 80px)
 	}
 	.grab{
 		transform: translate(-210px, 80px)
