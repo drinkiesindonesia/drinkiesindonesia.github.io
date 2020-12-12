@@ -21,7 +21,7 @@ html, body{
 .slogan{
 	color: white;
 	text-align:center;
-	transform: translateY(600px)
+	transform: translateY(600px);
 }
 #welcomepage h1{
 	animation: type 5s infinite  steps(26);
@@ -29,7 +29,7 @@ html, body{
 	white-space: nowrap;
 	border-right: 4px solid white;
 	width: 26ch;
-	margin-left: 450px;
+	margin-left: 470px;
 	
 }
 @keyframes type{
@@ -96,6 +96,38 @@ ul li a {
 }
 ul li:hover a {
 	color: cadetblue;
+}
+.menumobile{
+	float: right;
+	color: white;
+	display: none;
+	padding: 18px;
+	border: 1px;
+	cursor: pointer;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -500px;
+	width: 270px;
+	background-color: rgba(16, 47, 80, .9);
+	z-index: 2;
+	transition: 0.3s;
+}
+.sidebar ul li{
+	padding: 24px;
+	transition: 1s;
+	transition-property: background-color;
+}
+.sidebar ul li:hover{
+	background-color: rgba(44, 62, 80, .9);
+}
+#check{
+	display: none;
+}
+#check:checked ~ .sidebar{
+	left: 0;
 }
 #about{
 	display: flex;
@@ -310,8 +342,69 @@ ul li:hover a {
 }
 
 @media only screen and (max-width:600px){
-	div#welcomepage{
-		margin-left: -450px;
+	*, html {
+	margin: 0px;
+	padding: 0px;
+}
+	#welcomepage{
+		margin-left: -470px;
+	}
+	.slogan{
+		font-size: 25px;
+		transform: translate(50px, 600px);
+	}
+	.menumobile{
+		display: block;
+	}
+	header ul{
+		display: none;
+	}
+	.aboutcontent h1{
+		font-size: 60px;
+		margin-left: 10px;
+	}
+	.aboutcontent h3{
+		font-size: 25px;
+	}
+	.aboutcontent p{
+		font-size: 20px;
+		margin-top: 30px;
+	}
+	.gambar{
+		margin-left: 38px;
+	}
+	.dm img, .grab img, .dm label, .grab label{
+		display: none;
+	}
+	.logoorder{
+		display: flex;
+		flex-direction: column;
+		margin-left: 50px;
+	}
+	.logodm{
+		width: 440px;
+		height: 440px;
+		transform: translateY(-50px)
+	}
+	.logogf{
+		width: 220px;
+		height: 220px;
+		margin-left: 112px;
+		transform: translateY(-170px)
+	}
+	.dm button{
+		transform: translate(370px,0px)
+	}
+	.grab button{
+		transform: translate(-320px,230px)
+	}
+	.contactcontent h1{
+		font-size: 60px;
+	}
+	.contactcontent h3{
+		font-size: 25px;
+	}
+	.contactpic{
+		display: none;
 	}
 }
-
